@@ -92,9 +92,17 @@ public class Test__nominas {
                 + "Grupo profesional : ............. " + Tbr.getGProfesional() + " \n"
                 + "Grupo cotización : ............. " + Tbr.getGCotizacion() + " \n"
         );
+        
+        System.out.println(""
+                + "1. Percepciones salariales " + dvs.salarioBase() + " \n"
+                + "   Complemetos salariales " + dvs.getComp() + " \n"
+                + "  Total devengado " + dvs.getTotal() + " \n"         
+                +           
+                           
+                           
         System.out.println(""
                 + "1. Contingencias comunes"
-                + "     Remuneracion mensual  "
+                + "     Remuneracion mensual  " 
                 + "     Prorrata de pagas extraodinarias"
                 + "     Base incapacidad temporal "
                 + "     Base de cotizacion ala S.Soc "
