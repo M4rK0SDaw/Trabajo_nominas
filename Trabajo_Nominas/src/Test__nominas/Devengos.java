@@ -42,6 +42,14 @@ public class Devengos {
         bccp = bccc;
 
     }
+    
+    public double getSalario(){
+        return salarioB;
+    }
+    
+    public double getComp(){
+        return comp_sal;
+    }
 
     public double getTotal() {
 
