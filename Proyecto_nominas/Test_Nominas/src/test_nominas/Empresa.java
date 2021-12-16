@@ -10,7 +10,7 @@ package test_nominas;
  * @author Marek
  */
 public class Empresa {
-    private String Empresa, Domicilio, CIF, CCC;
+   private String Empresa, Domicilio, CIF, CCC;
 
     public String setEmpresa(String a) {
         Empresa = a;
@@ -18,37 +18,31 @@ public class Empresa {
     }
 
     public String getEmpresa() {
-        System.out.print("Empresa:");
+        
         return Empresa;
     }
 
-    public String setDomicilio(String b) {
+    public void setDomicilio(String b) {
         Domicilio = b;
-        return Domicilio;
     }
 
     public String getDomicilio() {
-        System.out.print("Domicilio:");
         return Domicilio;
     }
 
-    public String setCIF(String c) {
+    public void setCIF(String c) {
         CIF = c;
+    }
+
+    public String getCIF() {    
         return CIF;
     }
 
-    public String getCIF() {
-        System.out.print("CIF:");
-        return CIF;
-    }
-
-    public String setCCC(String d) {
+    public void setCCC(String d) {
         CCC = d;
-        return CCC;
     }
 
-    public String getCCC() {
-        System.out.print("CCC:");
+    public String getCCC() {      
         return CCC;
     }
 }
