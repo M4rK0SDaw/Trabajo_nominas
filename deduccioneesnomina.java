@@ -16,6 +16,7 @@ public class deduccioneesnomina {
   private double desempleodd = 1.60;
   private double irpf = 2.00;
   double totaldeducciones = 0;
+  double totaldeduccionesdd = 0;
   public double fpcalc(){
     double fpcalc = fp * bccp * 100; 
     return fpcalc;   
@@ -37,7 +38,8 @@ public class deduccioneesnomina {
       return irpfcalc;
   }
   public double sumatoriodeducciones(){
-     double sumatoriodeducciones = irpfcalc + desempleocalc + desempleoddcalc + cccalc + fpcalc;
+     double sumatoriodeducciones = irpfcalc + desempleocalc + cccalc + fpcalc;
+    double sumatoriodeduccionesdd = desempleoddcalc + irpfcalc + cccalc + fpcalc;
      return sumatoriodeducciones;
   }
 }
