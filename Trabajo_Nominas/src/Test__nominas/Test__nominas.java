@@ -67,6 +67,11 @@ public class Test__nominas {
 
     public static void Devengos() {
         String per_liq =  SLeer1.datoString("Periodo de liquidación ");
+        dvs.setTotal();
+        dvs.setContigC();
+        dvs.setContigP();
+        
+    
     }
     
     
@@ -77,7 +82,8 @@ public class Test__nominas {
     public static void main(String[] args) {
         pideEmpresas();
         PideTrabajador();
-
+        Devengos();
+        
         System.out.println("\n"
                 + "\nEMPRESA\n" //sacamos por pantalla la empresa.....
                 + "Empresa : ............. " + Emp.getEmpresa() + " \n"
