@@ -11,55 +11,45 @@ package Test__nominas;
  */
 public class Trabajador {
 
-    private String Trabajador, Nif, SeguridadSocial, GProfesional, GCotizacion;
+       private String Trabajador, Nif, SeguridadSocial, GProfesional, GCotizacion;
 
-    public String setTrabajador(String a) {
+    public void setTrabajador(String a) {
         Trabajador = a;
-        return Trabajador;
     }
 
     public String getTrabajador() {
-
         return Trabajador;
     }
 
-    public String setNif(String b) {
+    public void setNif(String b) {
         Nif = b;
-        return Nif;
     }
 
     public String getNif() {
-
         return Nif;
     }
 
-    public String setSeguridadSocial(String c) {
+    public void setSeguridadSocial(String c) {
         SeguridadSocial = c;
-        return SeguridadSocial;
     }
 
     public String getSeguridadSocial() {
-
         return SeguridadSocial;
     }
 
-    public String setGProfesional(String d) {
+    public void setGProfesional(String d) {
         GProfesional = d;
-        return Trabajador;
     }
 
     public String getGProfesional() {
-
         return GProfesional;
     }
 
-    public String setGCotizacion(String e) {
+    public void setGCotizacion(String e) {
         GCotizacion = e;
-        return GCotizacion;
     }
 
     public String getGCotizacion() {
-
         return GCotizacion;
     }
 }
