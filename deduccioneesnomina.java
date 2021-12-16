@@ -34,7 +34,7 @@ public class deduccioneesnomina {
       return desempleoddcalc;
   }
   public double irpfcalc(){
-      double irpfcalc = irpf *  * 100;
+      double irpfcalc = irpf * total_dev * 100;
       return irpfcalc;
   }
   public double sumatoriodeducciones(){
