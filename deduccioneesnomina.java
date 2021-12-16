@@ -39,7 +39,10 @@ public class deduccioneesnomina {
   }
   public double sumatoriodeducciones(){
      double sumatoriodeducciones = irpfcalc + desempleocalc + cccalc + fpcalc;
-    double sumatoriodeduccionesdd = desempleoddcalc + irpfcalc + cccalc + fpcalc;
      return sumatoriodeducciones;
+  }
+  public double sumatoriodeduccionesdd(){
+     double sumatoriodeduccionesdd = desempleoddcalc + irpfcalc + cccalc + fpcalc;
+    return sumatoriodeduccionesdd;
   }
 }
