@@ -66,7 +66,7 @@ public class Test__nominas {
     }
 
     public static void Devengos() {
-
+        String per_liq =  SLeer1.datoString("Periodo de liquidación ");
     }
     
     
