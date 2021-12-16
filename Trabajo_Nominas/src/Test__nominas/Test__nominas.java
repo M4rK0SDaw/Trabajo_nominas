@@ -100,9 +100,10 @@ public class Test__nominas {
         );
         
         System.out.println(""
+                + " DEVENGOS \n"
                 + "1. Percepciones salariales " + dvs.salarioBase() + " \n"
                 + "     Complemetos salariales " + dvs.getComp() + " \n"
-                + "                         Total devengado " + dvs.getTotal() + " \n"                            
+                + "                         A.Total devengado " + dvs.getTotal() + " \n"                            
         );      
         System.out.println(""
                 + "1. Contingencias comunes"
