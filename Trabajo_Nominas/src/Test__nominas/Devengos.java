@@ -42,12 +42,12 @@ public class Devengos {
         bccp = bccc;
 
     }
-    
-    public double getSalario(){
+
+    public double getSalario() {
         return salarioB;
     }
-    
-    public double getComp(){
+
+    public double getComp() {
         return comp_sal;
     }
 

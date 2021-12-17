@@ -11,15 +11,15 @@ package Test__nominas;
  */
 public class Empresa {
 
-  private String Empresa, Domicilio, CIF, CCC;
+    private String Empresa, Domicilio, CIF, CCC;
 
-    public String setEmpresa(String a) {
+    public void setEmpresa(String a) {
         Empresa = a;
-        return Empresa;
+
     }
 
     public String getEmpresa() {
-        
+
         return Empresa;
     }
 
@@ -35,7 +35,7 @@ public class Empresa {
         CIF = c;
     }
 
-    public String getCIF() {    
+    public String getCIF() {
         return CIF;
     }
 
@@ -44,7 +44,7 @@ public class Empresa {
     }
 
     public String getCCC() {
-       
+
         return CCC;
     }
 }

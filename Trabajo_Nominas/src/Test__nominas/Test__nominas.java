@@ -34,6 +34,9 @@ public class Test__nominas {
         return pc;
     }
 
+    /**
+     *
+     */
     public static void pideEmpresas() {
 
         //pideContrato();
@@ -51,6 +54,9 @@ public class Test__nominas {
 
     }
 
+    /**
+     *
+     */
     public static void PideTrabajador() {
         String nomtbr = SLeer1.datoString("Nombre del trabajador ");
         Tbr.setTrabajador(nomtbr);
@@ -65,16 +71,15 @@ public class Test__nominas {
 
     }
 
+    /**
+     *
+     */
     public static void Devengos() {
-        String per_liq =  SLeer1.datoString("Periodo de liquidación ");
+        String per_liq = SLeer1.datoString("Periodo de liquidación ");
         dvs.setTotal();
         dvs.setContigC();
         dvs.setContigP();
-        
-    
     }
-    
-    
 
     /**
      * @param args the command line arguments
@@ -83,7 +88,7 @@ public class Test__nominas {
         pideEmpresas();
         PideTrabajador();
         Devengos();
-        
+
         System.out.println("\n"
                 + "\nEMPRESA\n" //sacamos por pantalla la empresa.....
                 + "Empresa : ............. " + Emp.getEmpresa() + " \n"
@@ -98,16 +103,16 @@ public class Test__nominas {
                 + "Grupo profesional : ............. " + Tbr.getGProfesional() + " \n"
                 + "Grupo cotización : ............. " + Tbr.getGCotizacion() + " \n"
         );
-        
+
         System.out.println(""
                 + " DEVENGOS \n"
-                + "1. Percepciones salariales " + dvs.salarioBase() + " \n"
-                + "     Complemetos salariales " + dvs.getComp() + " \n"
-                + "                         A.Total devengado " + dvs.getTotal() + " \n"                            
-        );      
+                + "1. Percepciones salariales " + dvs.getSalario() + " \n"
+                + "   Complemetos salariales " + dvs.getComp() + " \n"
+                + "                         A.Total devengado " + dvs.getTotal() + " \n"
+        );
         System.out.println(""
                 + "1. Contingencias comunes"
-                + "     Remuneracion mensual  " 
+                + "     Remuneracion mensual  "
                 + "     Prorrata de pagas extraodinarias"
                 + "     Base incapacidad temporal "
                 + "     Base de cotizacion ala S.Soc "

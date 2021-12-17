@@ -11,7 +11,7 @@ package Test__nominas;
  */
 public class Trabajador {
 
-       private String Trabajador, Nif, SeguridadSocial, GProfesional, GCotizacion;
+    private String Trabajador, Nif, SeguridadSocial, GProfesional, GCotizacion;
 
     public void setTrabajador(String a) {
         Trabajador = a;
