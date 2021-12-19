@@ -20,7 +20,8 @@ public class Test__nominas {
     private static Trabajador Tbr = new Trabajador();
     private static Devengos dvs = new Devengos();
     private static Contingencias cont = new Contingencias();
-
+    private static deduccioneesnomina deduc = new deduccioneesnomina();
+    
     public static byte pideContrato() {
 
         do {
@@ -110,6 +111,21 @@ public class Test__nominas {
                 + "   Complemetos salariales " + dvs.getComp() + " \n"
                 + "                         A.Total devengado " + dvs.getTotal() + " \n"
         );
+         System.out.println(""
+                + "-Deducciones-"
+                + "Contingencias comunes... 4,7 ............. "+deduc.cccalc()+"."
+                + "Formacion profesional... 0.10 ............. "+deduc.fpcalc()+"."
+                + "Desempleo indeterminado... 1.55 ............ "+deduc.desempleocalc()+"."
+                + "IRPF... 2% ........... "+deduc.irpfcalc()+"."
+                + "Total deucciones .............."+deduc.totaldeducciones+".");
+        
+        System.out.println(""
+                + "-Deducciones-"
+                + "Contingencias comunes... 4,7 ............. "+deduc.cccalc()+"."
+                + "Formacion profesional... 0.10 ............. "+deduc.fpcalc()+"."
+                + "Desempleo indeterminado... 1.60 ............ "+deduc.desempleoddcalc()+"."
+                + "IRPF... 2% ........... "+deduc.irpfcalc()+"."
+                + "Total deucciones .............."+deduc.totaldeduccionesdd+".");
         System.out.println(""
                 + "1. Contingencias comunes"
                 + "     Remuneracion mensual  "
