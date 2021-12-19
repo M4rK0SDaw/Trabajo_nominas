@@ -22,6 +22,8 @@ public class Test__nominas {
     private static Contingencias cont = new Contingencias();
     private static deduccioneesnomina deduc = new deduccioneesnomina();
     
+    static int contrato;
+    
     public static byte pideContrato() {
 
         do {
@@ -90,6 +92,11 @@ public class Test__nominas {
         PideTrabajador();
         Devengos();
 
+        contrato = SLeer1.datoInt("Selección de tipo de contrato: "
+                + "1. duración indeterminada."
+                + "2. duración determinada");
+        
+        
         System.out.println("\n"
                 + "\nEMPRESA\n" //sacamos por pantalla la empresa.....
                 + "Empresa : ............. " + Emp.getEmpresa() + " \n"
@@ -111,6 +118,8 @@ public class Test__nominas {
                 + "   Complemetos salariales " + dvs.getComp() + " \n"
                 + "                         A.Total devengado " + dvs.getTotal() + " \n"
         );
+        
+        if(contrato == 1){
          System.out.println(""
                 + "-Deducciones-"
                 + "Contingencias comunes... 4,7 ............. "+deduc.cccalc()+"."
@@ -118,7 +127,7 @@ public class Test__nominas {
                 + "Desempleo indeterminado... 1.55 ............ "+deduc.desempleocalc()+"."
                 + "IRPF... 2% ........... "+deduc.irpfcalc()+"."
                 + "Total deucciones .............."+deduc.totaldeducciones+".");
-        
+        } else {
         System.out.println(""
                 + "-Deducciones-"
                 + "Contingencias comunes... 4,7 ............. "+deduc.cccalc()+"."
@@ -126,6 +135,7 @@ public class Test__nominas {
                 + "Desempleo indeterminado... 1.60 ............ "+deduc.desempleoddcalc()+"."
                 + "IRPF... 2% ........... "+deduc.irpfcalc()+"."
                 + "Total deucciones .............."+deduc.totaldeduccionesdd+".");
+        }
         System.out.println(""
                 + "1. Contingencias comunes"
                 + "     Remuneracion mensual  "
