@@ -9,24 +9,78 @@ package Test__nominas;
  *
  * @author marqu
  */
-public class Devengos {
+public class Devengos extends Trabajador {
 
     String per_liq;
     private final int dias_trab;
-    private final double salarioB;
-    private final double comp_sal;
+    private double salarioB;
+    private double comp_sal;
     double total_dev;
     double bccc;
     double bccp;
-    int pagas;
 
     public Devengos() {
         per_liq = " ";
         dias_trab = 30;
-        salarioB = 25035.54;
-        comp_sal = 1754.77;
-        pagas = 2;
 
+    }
+
+    public double setSalario(char sal) {
+        salarioB=sal;
+        switch (sal) {
+            case 'A':
+                salarioB = 25035.54;
+
+                break;
+
+            case 'B':
+                salarioB = 24297.46;
+
+                break;
+            case 'C':
+                salarioB = 23099.31;
+
+                break;
+            case 'D':
+                salarioB = 16548.44;
+
+                break;
+            case 'E':
+                salarioB = 14817.89;
+
+                break;
+
+        }
+        return sal;
+    }
+
+    public double setComp(char comp) {
+        comp_sal=comp;
+        switch (comp) {
+            case 'A':
+                
+                comp_sal = 1754.77;
+                break;
+
+            case 'B':
+                
+                comp_sal = 1698.13;
+                break;
+            case 'C':
+                
+                comp_sal = 1541.06;
+                break;
+            case 'D':
+                
+                comp_sal = 1167.21;
+                break;
+            case 'E':
+                
+                comp_sal = 1042.67;
+                break;
+
+        }
+        return comp;
     }
 
     public void setTotal() {
@@ -35,7 +89,7 @@ public class Devengos {
     }
 
     public void setContigC() {
-        bccc = (salarioB + comp_sal) + (salarioB * pagas / 12);
+        bccc = (salarioB + comp_sal) + (salarioB / 12);
     }
 
     public void setContigP() {
